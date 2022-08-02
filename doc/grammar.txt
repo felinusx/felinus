@@ -1,0 +1,42 @@
+Sequencia
+	Declaração
+	Atribuição
+
+Iteração
+Decisão
+Salto
+Função
+
+
+G: -> Block
+
+Block: -> Class | Function
+Function -> fun id ( Id_args ): (CMD* | CMD* return Id_args)
+Class: -> class id ( Id_args ): Id_args* (Function* | CMD*)
+Id_args: -> id 
+
+CMD -> Estrutural | Salto | Modular
+Estrutural -> Sequencia | Iteração | Decisão
+
+Iteracao: -> FOR | DO_WHIE | WHILE
+FOR: -> for Exp : Iterable CMD*
+Iterable: ->
+
+
+DO_WHILE: -> do: CMD* while: Exp*
+
+WHILE: -> while Exp* : CMD*
+
+Decisao: -> IF | SWITCH
+IF: -> if Exp*: CMD* else CMD*
+SWITCH: -> switch value -> { (case (const | id) :)* }
+
+
+Sequencia -> Expressao | Atribuicao
+Exp: ->
+Atribuicao: -> value = Exp
+
+Salto -> 
+Modular: -> id(Value_args)
+Value_args: -> (const | id)*
+
